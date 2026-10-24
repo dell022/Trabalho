@@ -1,0 +1,317 @@
+body {
+    background-color: #cdd8b0;
+    margin: 0;
+}
+
+#p1 {
+    width: 135px;
+    height: 150px;
+}
+
+header {
+    color: white;
+    background-color: #006427;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    color: #006427;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: solid 2px #006427;
+    padding: 10px;
+}
+
+#p2 {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#sec1 {
+    background-color: #D3AF37;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border: solid 2px #006427;
+    padding: 15px;
+}
+
+#sec1 p {
+    line-height: 1.5;
+}
+
+#sec2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #006427;
+    color: white;
+    border: solid 2px #006427;
+}
+
+#sec2 div {
+    text-align: center;
+}
+
+#mundo-palmeiras {
+    padding: 25px 20px;
+    margin-top: 20px;
+    background-color: #cdd8b0;
+    text-align: center;
+}
+
+#mundo-palmeiras h2 {
+    color: #006427;
+    margin-bottom: 25px;
+}
+
+.destaques-palestra {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.conquista-verdao,
+.noticias-verdao,
+.torcida-alviverde {
+    flex: 1;
+    padding: 20px;
+    background-color: #D3AF37;
+    border: 2px solid #006427;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.destaques-palestra h3 {
+    color: #006427;
+}
+
+.destaques-palestra p {
+    color: #183b22;
+    line-height: 1.5;
+}
+
+#convite-palmeirense {
+    padding: 50px 20px;
+    margin-top: 20px;
+    background-color: #006427;
+    color: white;
+    text-align: center;
+}
+
+#convite-palmeirense h2 {
+    color: white;
+    border: none;
+}
+
+#convite-palmeirense p {
+    line-height: 1.5;
+}
+
+#convite-palmeirense a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 10px;
+    background-color: #D3AF37;
+    color: #006427;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#convite-palmeirense a:hover {
+    background-color: #cdd8b0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 75%;
+    }
+
+    header {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        border: solid 2px black;
+    }
+
+    #sec1 {
+        align-items: center;
+        flex-direction: column-reverse;
+        border: solid 2px black;
+    }
+
+    #p2 {
+        max-width: 100%;
+    }
+
+    #sec2 {
+        flex-direction: column;
+        align-items: center;
+        border: solid 2px black;
+    }
+
+    .destaques-palestra {
+        flex-wrap: wrap;
+    }
+
+    .conquista-verdao,
+    .noticias-verdao,
+    .torcida-alviverde {
+        flex: 1 1 40%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #palmeiras,
+    #avanti {
+        display: none;
+    }
+
+    #mundo-palmeiras {
+        padding: 20px 12px;
+    }
+
+    #mundo-palmeiras h2 {
+        font-size: 18px;
+    }
+
+    .destaques-palestra {
+        flex-direction: column;
+    }
+
+    .conquista-verdao,
+    .noticias-verdao,
+    .torcida-alviverde {
+        width: 100%;
+    }
+
+    #convite-palmeirense {
+        padding: 25px 15px;
+    }
+
+    #convite-palmeirense h2 {
+        font-size: 20px;
+    }
+
+    #convite-palmeirense a {
+        padding: 10px 15px;
+    }
+}
+
+#localizacao-verdao {
+    padding: 30px 20px;
+    margin-top: 20px;
+    background: #f3f5ed;
+}
+
+#localizacao-verdao h2 {
+    color: #006427;
+    text-align: center;
+}
+
+.endereco-palmeiras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 25px auto 0;
+}
+
+.endereco-palmeiras img {
+    width: 100%;
+    border: 2px solid #006427;
+    border-radius: 8px;
+}
+
+.dados-localizacao {
+    padding: 20px;
+    background: #D3AF37;
+    border: 2px solid #006427;
+    border-radius: 8px;
+    color: #183b22;
+}
+
+.dados-localizacao h3 {
+    color: #006427;
+}
+
+.dados-localizacao a {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #006427;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+    .endereco-palmeiras {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #localizacao-verdao {
+        padding: 20px 12px;
+    }
+
+    .dados-localizacao {
+        padding: 15px;
+    }
+}
+
+details {
+    border: 3px solid #006427;
+    border-radius: 2px;
+    padding: 0.1em 0.1em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: 0.1em 0 0.1em;
+    padding: 1em;
+}
+
+details[open] {
+    padding: 1em;
+}
+
+details[open] summary {
+    border-bottom: 5px solid #006427;
+    margin-bottom: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+    #perguntas-palmeiras {
+        width: 95%;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+
+    details {
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #perguntas-palmeiras {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    summary {
+        font-size: 14px;
+    }
+}
